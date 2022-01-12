@@ -54,9 +54,9 @@ fn();
 fn();
 
 //Pass info through FUNCTIONS
-function showMessages(message, anotherMessage){
-    console.log(message,anotherMessage)
-}
+//function showMessages(message, anotherMessage){
+//    console.log(message,anotherMessage)
+//}
 //Pass argument and call
 console.log('first message', 'second message');
 
@@ -67,4 +67,17 @@ function getSecretCode(value){
 }
 console.log(getSecretCode(2));
 
-percentOff(30);
+//percentOff(30);
+
+//OBJECT and intro to THIS
+
+let persons = {
+    name: "John",
+    age: 32,
+    partTime: false,
+    showInfo: function(realAge){
+        showMessage(this.name + " is " + realAge);
+    }
+};
+
+persons.showInfo(34);
