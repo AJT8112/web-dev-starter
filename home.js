@@ -38,3 +38,33 @@ let person = {
     secondName: "Thomas"
 };
 showMessage(person.firstName);
+
+//CREATE FUNCTION DECLARATION
+function displayMessage(){
+    console.log("Function Added");
+} //CALL to execute the function
+displayMessage();
+displayMessage();
+
+//CREATE FUNCTION EXPRESSIONS
+let fn = function(){
+    console.log("Function expression");
+} //CALL function expressions
+fn();
+fn();
+
+//Pass info through FUNCTIONS
+function showMessages(message, anotherMessage){
+    console.log(message,anotherMessage)
+}
+//Pass argument and call
+console.log('first message', 'second message');
+
+//functions to return values
+function getSecretCode(value){
+    let code = value * 42;
+    return code;
+}
+console.log(getSecretCode(2));
+
+percentOff(30);
