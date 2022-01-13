@@ -71,7 +71,7 @@ console.log(getSecretCode(2));
 
 //OBJECT and intro to THIS
 
-let persons = {
+/*let persons = {
     name: "John",
     age: 32,
     partTime: false,
@@ -80,4 +80,17 @@ let persons = {
     }
 };
 
-persons.showInfo(34);
+persons.showInfo(34);*/
+
+let persons = {
+    name: "John",
+    age: 32,
+    partTime: false,
+};
+
+function incrementAge(p){
+    p.age++;
+}
+
+incrementAge(persons);
+console.log(persons.age);
